@@ -4,27 +4,24 @@ public class Application03 {
 
     public static void main(String[] args) {
 
-        int num1 = 10;
-        int num2 = 20;
+        int[] arr = {2,5,4,6,1,3};
+        int min;
+        int temp;
 
-        int team = num1;
-        num1 = num2;
-        num2 = team;
-
-        System.out.println("num1 : " + num1);
-        System.out.println("num2 : " + num2);
-
-        int[] arr = {2,1,3};
-
-        team = arr[0];
-        arr[0] = arr[1];
-        arr[1] = team;
-        for (int i = 0; i < arr.length; i++){
-            System.out.println(arr[i]);
+        for (int i = 0; i < arr.length; i++) {
+            min = i;
+            for (int j = i; j < arr.length; j++) {
+                if (arr[min] > arr[j]){
+                    min = j;
+                }
+            }
+            temp = arr[min];
+            arr[min] = arr[i];
+            arr[i] = temp;
         }
 
-    }
-    public void print(){
-
+        for (int x : arr) {
+            System.out.print(x);
+        }
     }
 }

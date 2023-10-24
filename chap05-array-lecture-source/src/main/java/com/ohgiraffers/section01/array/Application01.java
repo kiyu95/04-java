@@ -29,7 +29,6 @@ public class Application01 {
 
         System.out.println("num 1~5 += " + sum);
 
-
         int[] array = new int[5]; // 5자리 int형 배열 생성
         array[0] = 10;
         array[1] = 20;
