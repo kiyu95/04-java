@@ -56,6 +56,8 @@ public class Application01 {
         minsik.pwd = "pass";
         minsik.gender = '남';
 
+
+
     }
 
     public static void print(String id, String pwd, String name, int age, char gender, String[] hobbys){
@@ -72,8 +74,9 @@ public class Application01 {
         return age + 1;
     }
 
-    public static Member modifyMember(Member member){
+    public static Member modifyMember(Member member){ // Member 클레스형 메서드(메서드명:modifyMember)를 생성하고 member 값을 입력받음
         member.age = member.age + 1;
+
 //        취미 변경됬을 경우
 //        Scanner scanner = new Scanner(System.in);
 //        System.out.println("취미가 변경 되셧나요? ");
