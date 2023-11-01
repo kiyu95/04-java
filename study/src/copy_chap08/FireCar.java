@@ -17,13 +17,16 @@ public class FireCar extends Car{
 
     @Override
     public void run() {
+        setIsRunning(true);
         System.out.println("소방차가 달립니다");
     }
 
     @Override
     public void stop() {
+        setIsRunning(false);
         System.out.println("소방차가 멈춥니다");
     }
+
 
     public void sprayWater() { // 속성을 확장(extend)하였음
         System.out.println("물을 뿌립니다.");

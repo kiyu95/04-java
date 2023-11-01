@@ -78,7 +78,8 @@ public class Application {
 
         Animal animal3 = (Animal) new Rabbit(); // up-casting 명시적 형변환
         Animal animal4 = new Rabbit(); // 묵시적 형 변환
-        Rabbit rabbit1 = (Rabbit) new Animal(); // down-casting 명시적 형변환
+//        Rabbit rabbit1 = (Rabbit) new Animal(); // down-casting 명시적 형변환이나 에러
 //        Rabbit rabbit2 = new Animal(); // 묵시적 형변환이나 에러
+        Rabbit rabbit1 = (Rabbit) animal3; // up-casing 후에만 down-castig 가능하다
     }
 }

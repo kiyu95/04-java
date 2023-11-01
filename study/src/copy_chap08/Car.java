@@ -24,6 +24,9 @@ public class Car {
     public boolean isRunning() {
         return runningState;
     }
+    public void setIsRunning(boolean isTrue){
+        runningState = isTrue;
+    }
 
     public void stop() {
         runningState = false;
