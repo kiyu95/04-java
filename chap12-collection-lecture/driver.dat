@@ -1,0 +1,6 @@
+#jdbcDriver
+#Fri Nov 03 11:44:29 KST 2023
+driver=oracle.jdbc.diver.OracleDriver
+pass=pass
+user=user
+url=localhost
